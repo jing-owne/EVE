@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+*.log
+
+# Local config (secrets)
+*.txt
+*.json
+!cron_config.yaml
+!crons_config.json
+
+# Environment
+.env
+.env.local
+
+# Reports (generated)
+reports/
+*.png
+*.html
+
+# Temp
+*.tmp
+*.bak
