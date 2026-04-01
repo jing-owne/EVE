@@ -10,11 +10,6 @@ build/
 .mypy_cache/
 .venv/
 venv/
-*.pyc
-
-# Node
-node_modules/
-*.log
 
 # Data & Cache
 data/cache/
@@ -29,8 +24,7 @@ output/
 
 # Config (secrets)
 *.txt
-config/secrets.yaml
-email_config.txt
+!requirements.txt
 
 # Environment
 .env
@@ -40,9 +34,13 @@ email_config.txt
 .idea/
 .vscode/
 *.swp
-*.swo
 
 # Temp
 *.tmp
 *.bak
-_search*.json
+*.json
+!package.json
+!crons_config.json
+
+# OpenClaw
+.openclaw/
