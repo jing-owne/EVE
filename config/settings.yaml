@@ -1,0 +1,26 @@
+# EVE 配置文件
+
+# 邮件配置
+email:
+  host: smtp.qq.com
+  port: 465
+  user: ""  # 从环境变量或 email_config.txt 读取
+  password: ""
+  from_name: Marcus
+  to_email: "18339435211@139.com"
+  cc_emails: ""
+
+# 扫描配置
+scan:
+  min_turnover: 1.0      # 最小换手率
+  min_amount: 0.2       # 最小成交额（亿）
+  max_pct_chg: 9.5      # 最大涨幅
+  top_limit: 15         # 返回数量
+  exclude_prefixes:     # 排除前缀
+    - "688"
+    - "8"
+    - "4"
+
+# 其他配置
+debug: false
+log_level: INFO

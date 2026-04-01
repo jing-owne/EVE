@@ -10,26 +10,39 @@ build/
 .mypy_cache/
 .venv/
 venv/
+*.pyc
 
 # Node
 node_modules/
 *.log
 
-# Local config (secrets)
+# Data & Cache
+data/cache/
+logs/
+*.log
+
+# Output
+output/
+*.html
+*.png
+*.jpg
+
+# Config (secrets)
 *.txt
-*.json
-!cron_config.yaml
-!crons_config.json
+config/secrets.yaml
+email_config.txt
 
 # Environment
 .env
 .env.local
 
-# Reports (generated)
-reports/
-*.png
-*.html
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
 # Temp
 *.tmp
 *.bak
+_search*.json
